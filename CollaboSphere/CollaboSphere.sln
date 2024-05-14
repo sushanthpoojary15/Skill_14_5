@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollaboSphere.Web.API", "CollaboSphere.Web.API\CollaboSphere.Web.API.csproj", "{32D1EE62-C09A-4370-B153-EAE8D34E77B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{EA95F124-2631-42C6-8080-E2CB80CC62B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{BEE743D1-A19F-45C0-9139-E43373B3D3C7}"
+	ProjectSection(SolutionItems) = preProject
+		CollaboSphere.Web.API\Program.cs = CollaboSphere.Web.API\Program.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{CE0AA294-79BB-44C3-B1E5-4191076EC175}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollaboSphere.Business", "CollaboSphere.Business\CollaboSphere.Business.csproj", "{18B87393-03F2-44C6-A26B-5121E9FAC22D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollaboSphere.DataAccess", "CollaboSphere.DataAccess\CollaboSphere.DataAccess.csproj", "{09270C36-0028-417F-A856-6F5E4D6D699D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DE8AC325-8522-4593-97B2-9981EA9CA2CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollaboSphere.Common", "CollaboSphere.Common\CollaboSphere.Common.csproj", "{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D1EE62-C09A-4370-B153-EAE8D34E77B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D1EE62-C09A-4370-B153-EAE8D34E77B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D1EE62-C09A-4370-B153-EAE8D34E77B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D1EE62-C09A-4370-B153-EAE8D34E77B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B87393-03F2-44C6-A26B-5121E9FAC22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B87393-03F2-44C6-A26B-5121E9FAC22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B87393-03F2-44C6-A26B-5121E9FAC22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B87393-03F2-44C6-A26B-5121E9FAC22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09270C36-0028-417F-A856-6F5E4D6D699D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09270C36-0028-417F-A856-6F5E4D6D699D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09270C36-0028-417F-A856-6F5E4D6D699D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09270C36-0028-417F-A856-6F5E4D6D699D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32D1EE62-C09A-4370-B153-EAE8D34E77B4} = {EA95F124-2631-42C6-8080-E2CB80CC62B7}
+		{18B87393-03F2-44C6-A26B-5121E9FAC22D} = {BEE743D1-A19F-45C0-9139-E43373B3D3C7}
+		{09270C36-0028-417F-A856-6F5E4D6D699D} = {CE0AA294-79BB-44C3-B1E5-4191076EC175}
+		{758FF7FB-F2F0-4C32-8E26-048F69B5AD7C} = {DE8AC325-8522-4593-97B2-9981EA9CA2CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CA5CCB1-A0A0-4B5A-87B3-651F1F12A827}
+	EndGlobalSection
+EndGlobal

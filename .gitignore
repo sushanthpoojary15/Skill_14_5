@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CollaboSphere/CollaboSphere.Web.API/obj/Release/net6.0
+/CollaboSphere/CollaboSphere.Web.API/obj/Debug/net6.0
+/CollaboSphere/CollaboSphere.Web.API/bin/Debug/net6.0
+/CollaboSphere/CollaboSphere.DataAccess/obj/Debug/net6.0
+/CollaboSphere/CollaboSphere.DataAccess/bin/Debug/net6.0
+/CollaboSphere/CollaboSphere.Common/obj
+/CollaboSphere/CollaboSphere.Common/bin/Debug/net6.0
+/CollaboSphere/CollaboSphere.Business/obj
+/CollaboSphere/CollaboSphere.Business/bin/Debug/net6.0
+/CollaboSphere/.vs
+/.vs
+/CollaboSphere/CollaboSphere.DataAccess/obj
+/CollaboSphere/CollaboSphere.Web.API/obj
+/CollaboSphere/CollaboSphere.DataAccess/bin/Release/net6.0
+/CollaboSphere/CollaboSphere.Business/bin/Release/net6.0
+/CollaboSphere/CollaboSphere.Web.API/bin/Release/net6.0
