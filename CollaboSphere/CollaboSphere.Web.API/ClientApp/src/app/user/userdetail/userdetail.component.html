@@ -1,0 +1,60 @@
+<br/>
+<div class="container-fluid">
+    <!-- Card for User Details -->
+    <div class="card mb-4">
+        <!-- Card Header with Title and Buttons -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>User Details</span>
+            <div>
+                <button class="btn btn-link">
+                    <i class="fas fa-edit fa-lg"></i>
+                </button>
+                <button (click)="backToList()" class="btn btn-secondary">
+                    Go Back
+                </button>
+            </div>
+        </div>
+
+        <!-- Card Body with User Details in Two Columns -->
+        <div class="card-body">
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label"><strong>First Name:</strong></label>
+                        <div>{{this.userDataById.firstName}}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Last Name:</strong></label>
+                        <div>{{this.userDataById.lastName}}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><strong>User Name:</strong></label>
+                        <div>{{this.userDataById.username}}</div>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Role ID:</strong></label>
+                        <div>{{this.userDataById.roleId}}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Is Active:</strong></label>
+                        <div>{{this.userDataById.isActive}}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Email:</strong></label>
+                        <div>{{this.userDataById.email}}</div>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label class="form-label"><strong>Date of Birth:</strong></label>
+                        <div>01/01/1990</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

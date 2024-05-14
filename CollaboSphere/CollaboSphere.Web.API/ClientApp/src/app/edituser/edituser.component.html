@@ -1,0 +1,66 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Users</h1>
+    <!-- Flex container for breadcrumb and button -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">User Management</a></li>
+            <li class="breadcrumb-item active">Edit Users</li>
+        </ol>
+        <!-- Button "Add User" -->
+       
+    </div>
+<div class="card-body">
+<form [formGroup]="userForm" (ngSubmit)="onSubmitForm(userForm.value)">
+    <div class="form-group">
+      <label for="userId">User ID:</label>
+      <input type="number" readonly class="form-control" id="userId" formControlName="userId" required>
+      <span class="error" *ngIf="!userForm.controls['userId'].valid && userForm.controls['userId'].dirty">Please enter a valid User ID.</span>
+    </div>
+    <div class="form-group">
+      <label for="roleId">Role ID:</label>
+      <select class="form-control" id="roleId" formControlName="roleId" required>
+        <option *ngFor="let role of roles" [value]="role.roleId">{{ role.roleName }}</option>
+      </select>
+      <span class="error" *ngIf="!userForm.controls['roleId'].valid && userForm.controls['roleId'].dirty">Please enter a valid Role ID.</span>
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" formControlName="username" required>
+      <span class="error" *ngIf="!userForm.controls['username'].valid && userForm.controls['username'].dirty">Please enter a valid Username.</span>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" formControlName="email" required>
+      <span class="error" *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">Please enter a valid Email.</span>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+      <span class="error" *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">Please enter a valid Password.</span>
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+      <span class="error"  *ngIf="!userForm.controls['firstName'].valid && userForm.controls['firstName'].dirty">Please enter a valid First Name.</span>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" id="lastName" formControlName="lastName" required>
+      <span class="error" *ngIf="!userForm.controls['lastName'].valid && userForm.controls['lastName'].dirty">Please enter a valid Last Name.</span>
+    </div>
+    <div class="form-group">
+      <label for="isActive">Is Active:</label>
+      <select  class="form-control" id="isActive" formControlName="isActive">
+        <option [value]=true [selected]="initialIsActiveValue" >True</option>
+        <option [value]=false [selected]="!initialIsActiveValue">False</option>
+        </select>
+        <span class="error" *ngIf="!userForm.controls['isActive'].valid && userForm.controls['isActive'].dirty">Please enter a valid IsActive</span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    <button type="button" class="btn btn-secondary mx-3 mt-3" (click)="clearAllFields()">Reset</button>
+  </form>
+  
+
+  </div>
+  </div>
+  

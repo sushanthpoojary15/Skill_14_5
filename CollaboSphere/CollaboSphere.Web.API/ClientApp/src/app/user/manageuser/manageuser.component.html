@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="card my-4">
+        
+        <div class="card-body">
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                <!-- Row 1 -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter first name" formControlName="firstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name" formControlName="lastName">
+                        <input type="hidden" formControlName="userId">
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="username" class="form-label">User Name</label>
+                        <input type="tel" class="form-control" id="username" placeholder="Enter User Name" formControlName="username">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter email address" formControlName="email">
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="roleId" class="form-label">Role ID</label>
+                        <input type="text" class="form-control" id="roleId" placeholder="Enter Role Id" formControlName="roleId">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="isActive" formControlName="isActive">
+                            <label class="form-check-label" for="isActive">
+                                Is Active?
+                            </label>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+              
+                <!-- Buttons row -->
+                <div class="row">
+                    <!-- Left aligned button -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <button type="button" class="btn btn-secondary" (click)="goBack()">Go Back</button>
+                    </div>
+
+                    <!-- Right aligned buttons -->
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
